@@ -42,10 +42,13 @@ public class Main {
         int loc = 1;
         boolean success = false;
         while (true) {
+
             System.out.println(locations.get(loc).getDescription());
+
             if (loc == 0) {
                 break;
             }
+
             Map<String, Integer> exits = locations.get(loc).getExits();
             System.out.println("Available exits are: ");
             for (String exit : exits.keySet()) {
